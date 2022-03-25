@@ -1,4 +1,4 @@
-
+from Game.shared.point import Point
 
 class Body:
     
