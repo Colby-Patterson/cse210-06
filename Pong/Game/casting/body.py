@@ -1,4 +1,5 @@
 from Game.shared.point import Point
+from Game.casting.rectangle import Rectangle
 
 class Body:
     
