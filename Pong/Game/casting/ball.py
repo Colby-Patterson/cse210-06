@@ -1,5 +1,6 @@
 import random
 from Game.casting.actor import Actor
+from Game.shared.point import Point
 
 
 class Ball(Actor):
@@ -32,4 +33,11 @@ class Ball(Actor):
 
         return self._body
 
+    def release(self):
+
+        rn = random.uniform(0.9, 1.1)
+        vx = random.choice([-BALL_VELOCITY * rn, BALL_VELOCITY * rn])
+        vy = -BALL_VELOCITY
+        velocity = Point(vx, vy)
+        self._body.set_velocity(velocity)
     
