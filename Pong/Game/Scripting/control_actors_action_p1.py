@@ -1,5 +1,5 @@
 #import constants
-#from game.shard.point import Point
+#from game.shared.point import Point
 from game.scripting.action import Action
 
 class ControlActorsAction(Action):
