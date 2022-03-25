@@ -19,6 +19,8 @@ from game.services.video_service import VideoService
 class SceneManager:
 
     def prepare_scene(self, scene, cast, script):
+        if scene == "menu":
+            self._prepare_menu_screen(cast, script)
         if scene == "original_pong":
             self._prepare_original_pong(cast, script)
 
