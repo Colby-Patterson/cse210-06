@@ -38,3 +38,9 @@ class Cast:
         
         if group in self._actors:
             self._actors[group].remove(actor)
+
+    def reset_actor_group(self, group):
+
+        if group in self._actors:
+            for actor in self._actors[group]:
+                self._actors[group].remove(actor)
