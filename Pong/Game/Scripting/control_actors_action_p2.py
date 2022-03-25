@@ -1,5 +1,5 @@
 #import constants
-#from game.shard.point import Point
+#from game.shared.point import Point
 from game.scripting.action import Action
 
 class ControlActorsAction(Action):
@@ -13,10 +13,10 @@ class ControlActorsAction(Action):
 
         pass
 
-        #player 1 up
+        #player 2 up
         #if self._keyboard_service.is_key_down('i'):
             #self._direction = Point(0, -constants.CELL_SIZE)
 
-        #player 1 down
+        #player 2 down
         #if self._keyboard_service.is_key_down('k'):
             #self._direction = Point(0, constants.CELL_SIZE)
