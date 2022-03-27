@@ -1,6 +1,6 @@
 import random
-from Game.casting.actor import Actor
-from Game.shared.point import Point
+from game.casting.actor import Actor
+from game.shared.point import Point
 
 
 class Ball(Actor):

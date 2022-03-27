@@ -1,20 +1,20 @@
-from Game.casting.actor import Actor
-from Game.casting.cast import Cast
-from Game.casting.ball import Ball
-from Game.casting.paddles import Paddles
+from game.casting.actor import Actor
+from game.casting.cast import Cast
+from game.casting.ball import Ball
+from game.casting.paddles import Paddles
 
-from Game.scripting.script import Script
-from Game.scripting.action import Action
-from Game.scripting.control_actors_action_p1 import ControlActorsAction
-from Game.scripting.control_actors_action_p2 import ControlActorsAction
-from Game.scripting.draw_actors_action import DrawActorsAction
-from Game.scripting.handle_collisions_action import HandleCollisionsAction
-from Game.scripting.move_actors_action import MoveActorsAction
-from Game.scripting.control_menu_action import ControlMenuAction
-from Game.scripting.draw_menu_action import DrawMenuAction
+from game.scripting.script import Script
+from game.scripting.action import Action
+from game.scripting.control_actors_action_p1 import ControlActorsAction
+from game.scripting.control_actors_action_p2 import ControlActorsAction
+from game.scripting.draw_actors_action import DrawActorsAction
+from game.scripting.handle_collisions_action import HandleCollisionsAction
+from game.scripting.move_actors_action import MoveActorsAction
+from game.scripting.control_menu_action import ControlMenuAction
+from game.scripting.draw_menu_action import DrawMenuAction
 
-from Game.services.keyboard_service import KeyboardService
-from Game.services.video_service import VideoService
+from game.services.keyboard_service import KeyboardService
+from game.services.video_service import VideoService
 
 class SceneManager:
 
