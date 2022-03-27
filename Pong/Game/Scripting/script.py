@@ -54,3 +54,6 @@ class Script:
         if group in self._actions:
             for action in self._actions[group]:
                 self._actions[group].remove(action)
+
+    def remove_all_actions(self):
+        self._actions.clear()

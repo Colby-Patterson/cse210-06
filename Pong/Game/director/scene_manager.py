@@ -20,8 +20,10 @@ class SceneManager:
 
     def prepare_scene(self, scene, cast, script):
         if scene == "menu":
+            self.reset_scene
             self._prepare_menu_screen(cast, script)
         if scene == "original_pong":
+            self.reset_scene
             self._prepare_original_pong(cast, script)
 
     def _prepare_menu_screen(self, cast, script):
@@ -39,3 +41,8 @@ class SceneManager:
 
     def _prepare_original_pong(self, cast, script):
         pass
+
+
+    def reset_scene(self, cast, script):
+        cast.remove_all_actors()
+        script.remove_all_actions()
