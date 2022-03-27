@@ -1,4 +1,7 @@
-class Paddle:
+from Game.casting.actor import Actor
+from constants import *
+from Game.shared.point import Point
+class Paddle(Actor):
 
     def __init__(self, body, debug = False):
 
@@ -23,7 +26,7 @@ class Paddle:
 
     def swing_down(self):
 
-        veloity = Point(PADDLE_VELOCITY, 0)
+        velocity = Point(PADDLE_VELOCITY, 0)
         self._body.set_velocity(velocity)
 
     def stop_moving(self):
